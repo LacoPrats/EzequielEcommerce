@@ -1,10 +1,10 @@
-const ItemList=()=>{
+import Item from "./item"
+import React from "react"
+function ItemList({products}){
     return(
-        <ul>
-            {productos.map((producto,indice)=>{
-return <li> {producto.nombre}</li>
-        })}
-        </ul>
+        <>
+         {products.map((product)=>(<Item key={product.id} product={product}/>))}
+        </>
     )
 }
 export default ItemList

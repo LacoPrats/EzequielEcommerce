@@ -1,4 +1,6 @@
 import{useEffect, useState} from "react"
+import { Routes } from "react-router-dom";
+import ItemListContainer from "./itemListContainer";
 
 const baseDeDatos = [
     {
@@ -32,16 +34,7 @@ let productosIniciales=[]
 const Main=(props)=>{
     return(
         <main className="container">
-            <p> La cantidad de produtos es :0</p>
-            <p>{loading ? "Cargando productos":"Ya estan los productos cargados"}</p>
-            <ul>
-                {productos.map((productos,indice)=>{
-                    return <li>productos.nombre</li>
-                })}
-            </ul>
-            <button onClick={handleClick}>aumentar</button>
-            <button onClick={reStar}>restar</button>
-            <button onClick={reset}>reset</button>
+      <ItemListContainer />
         </main>
 
     

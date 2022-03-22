@@ -1,12 +1,11 @@
+import { NavLink } from "react-router-dom";
+
 function Header(){
     return(
         <header>
-            <h1>Anime World</h1>
-            <nav>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-            </nav>
+            <h1>Hoops World</h1>
+          
+            
         </header>
     )
 }
