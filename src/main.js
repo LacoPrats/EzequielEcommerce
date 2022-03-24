@@ -1,5 +1,5 @@
 import{useEffect, useState} from "react"
-import { Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import ItemListContainer from "./itemListContainer";
 
 const baseDeDatos = [
@@ -35,6 +35,11 @@ const Main=(props)=>{
     return(
         <main className="container">
       <ItemListContainer />
+     <Routes>
+         <Route path="/Carrito"element={<Carrito/>}/>
+         
+     </Routes>
+
         </main>
 
     

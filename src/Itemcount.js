@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { contexto } from "./App";
 
 
 function Counter({ stock, initial }) {
   const [contador, setContador] = useState(initial);
+  useContext(contexto)
 
   const aumentarContador = () => {
     if (contador < stock) setContador(contador + 1);

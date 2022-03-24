@@ -96,6 +96,7 @@ const products = [
             <h4>...Loading</h4>
            )
         }else{
+            console.log(products);
             return(
            <div>
                <ItemList products={products}/>
